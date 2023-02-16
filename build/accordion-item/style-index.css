@@ -1,0 +1,101 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/accordion-item/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-accordion-item {
+  padding: 2px;
+}
+
+.simple-accordion__wrapper--item {
+  margin-bottom: 20px;
+}
+.simple-accordion__wrapper--item .ac-trigger {
+  width: 100%;
+  padding: 15px;
+  background-color: #3056D3;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  padding-right: 40px;
+  line-height: 1.5;
+}
+.simple-accordion__wrapper--item .ac-panel {
+  visibility: hidden;
+  opacity: 0;
+}
+.simple-accordion__wrapper--item .ac-panel p {
+  font-size: 15px;
+  padding: 15px 5px;
+  color: rgb(121, 121, 121);
+  line-height: 1.6;
+}
+.simple-accordion__wrapper--item .ac-header {
+  position: relative;
+}
+.simple-accordion__wrapper--item .ac-header .close-accordion {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 50%;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMTEuNUMyIDEwLjk0NzcgMi40NDc3MiAxMC41IDMgMTAuNUwyMSAxMC41QzIxLjU1MjMgMTAuNSAyMiAxMC45NDc3IDIyIDExLjVWMTIuNUMyMiAxMy4wNTIzIDIxLjU1MjMgMTMuNSAyMSAxMy41SDNDMi40NDc3MiAxMy41IDIgMTMuMDUyMyAyIDEyLjVWMTEuNVoiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.simple-accordion__wrapper--item .ac-header .open-accordion {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 50%;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjRkZGRkZGRiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgM0MxMy41IDIuNDQ3NzIgMTMuMDUyMyAyIDEyLjUgMkgxMS41QzEwLjk0NzcgMiAxMC41IDIuNDQ3NzIgMTAuNSAzVjEwLjVIM0MyLjQ0NzcyIDEwLjUgMiAxMC45NDc3IDIgMTEuNVYxMi41QzIgMTMuMDUyMyAyLjQ0NzcyIDEzLjUgMyAxMy41SDEwLjVWMjFDMTAuNSAyMS41NTIzIDEwLjk0NzcgMjIgMTEuNSAyMkgxMi41QzEzLjA1MjMgMjIgMTMuNSAyMS41NTIzIDEzLjUgMjFWMTMuNUgyMUMyMS41NTIzIDEzLjUgMjIgMTMuMDUyMyAyMiAxMi41VjExLjVDMjIgMTAuOTQ3NyAyMS41NTIzIDEwLjUgMjEgMTAuNUgxMy41VjNaIiBmaWxsPSIjZmZmZmZmIi8+Cjwvc3ZnPg==);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.simple-accordion__wrapper--item.is-active .ac-panel {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.simple-accordion__wrapper--item.is-active .close-accordion {
+  opacity: 1;
+  visibility: visible;
+}
+.simple-accordion__wrapper--item.is-active .open-accordion {
+  opacity: 0;
+  visibility: hidden;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 575.98px) {
+  .simple-accordion__text {
+    padding: 0 30px;
+  }
+  .simple-accordion__text--heading {
+    font-size: 28px;
+  }
+  .simple-accordion__text--caption {
+    font-size: 15px;
+  }
+  .simple-accordion__wrapper--item .ac-trigger {
+    font-size: 15px;
+  }
+  .simple-accordion__wrapper--item .ac-panel p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

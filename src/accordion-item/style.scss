@@ -1,0 +1,118 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-accordion-item {
+	padding: 2px;
+}
+@import 'accordion-js/dist/accordion.min.css';
+
+.simple-accordion__wrapper--item {
+	margin-bottom: 20px;
+	.ac-trigger {
+		width: 100%;
+		padding: 15px;
+		background-color: #3056D3;
+		color: white;
+		font-size: 16px;
+		font-weight: 600;
+		border: none;
+		border-radius: 5px;
+		text-align: left;
+		cursor: pointer;
+		padding-right: 40px;
+		line-height: 1.5;
+	}
+	.ac-panel {
+		visibility: hidden;
+		opacity: 0;
+		p {
+			font-size: 15px;
+			padding: 15px 5px;
+			color: rgb(121, 121, 121);
+			line-height: 1.6;
+		}
+	}
+
+	.ac-header {
+		position: relative;
+		.close-accordion {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			right: 15px;
+			top: 50%;
+			background-image: url('../assets/minus.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			transform: translateY(-50%);
+			transition: 0.3s;
+		}
+		.open-accordion {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			right: 15px;
+			top: 50%;
+			background-image: url('../assets/plus.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			transform: translateY(-50%);
+			transition: 0.5s;
+		}
+	}
+
+}
+.simple-accordion__wrapper--item.is-active {
+
+	.ac-panel {
+	   visibility: visible !important;
+	   opacity: 1 !important;
+   }
+   .close-accordion {
+		opacity: 1;
+		visibility: visible;
+   }
+   .open-accordion {
+		opacity: 0;
+		visibility: hidden;
+		transform: rotate(180deg);
+   }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.simple-accordion__text {
+		padding: 0 30px;
+		&--heading {
+			font-size: 28px;
+		}
+		&--caption {
+			font-size: 15px;
+		}
+	}
+	.simple-accordion__wrapper--item .ac-trigger {
+		font-size: 15px;
+	}
+	.simple-accordion__wrapper--item .ac-panel p {
+		font-size: 14px;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+}
